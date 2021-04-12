@@ -6,5 +6,6 @@ First, you identify the x,y-position of all endo-lysosomes from a fluorescence i
 
 Second, you download the Macro _'Skeletonize_spotDistance_EDT.ijm'_ and run it on the corresponding image of labeled mitochondria. For labeling MitoTracker or immunostaining (e.g. against VDAC or TOM20) can be used. Provide first the pixel size of your images, which you can find from the TIFF header under /Image/Properties in ImageJ. Click 'OK' and choose a threshold to identify the mitochondria based on their intensity. Click 'OK, and the Macro will a binarized skeleton of the mitochondria and from that an Euclidian distance transform (a new image called 'EDT'). It will map the positions of the identified endo-lysosomes onto the EDT and output the intensity value into the Results table. These intensity values can be found as 'Mean intensity' in the Results table (if this was chosen under /Analyze/Set Measurements, and they are the distance of each endo.lysosome peak position to the next mitochondrion in µm.
 
-
+## 3D analysis:
+For 3D analysis, you need confocal z-stacks of doubly-labeled cells and have to have the 3D ImageJ suite deveoped by Drs. Thomas Boudier and Jean Ollion installed (available at https://imagej.net/3D_ImageJ_Suite).  
 Further details of the image analysis workflow and results of it can be found in the publication 
